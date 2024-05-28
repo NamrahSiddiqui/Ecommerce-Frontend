@@ -97,7 +97,7 @@
       }
 
       > img {
-        @include square(5rem);
+        @include square(3rem);
         object-fit: cover;
         border-radius: 5px;
       }

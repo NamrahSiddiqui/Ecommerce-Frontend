@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { VscError } from "react-icons/vsc";
 import CartItem from "../components/cart-item";
 import { Link } from "react-router-dom";
+import macbook from '../assets/macbook.jpg'
 const cartItems = [
   {
     productId: "12",
-    photo: "",
+    photo: macbook,
     name: "Macbook",
     price: "300",
     quantity: 40,
@@ -72,7 +73,7 @@ const Cart = () => {
               <VscError />
             </span>
           ))}
-        {cartItems.length > 0 && <Link to="/shipping"></Link>}
+        {cartItems.length > 0 && <Link to="/shipping">Checkout</Link>}
       </aside>
     </div>
   );

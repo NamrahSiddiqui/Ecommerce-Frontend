@@ -3,7 +3,7 @@ import { BiArrowBack } from 'react-icons/bi'
 import { useNavigate } from 'react-router-dom'
 
 const Shipping = () => {
-    const [shippingInfo, setShippingInfo]=useState({address"", city:"", state:"", country:"", pinCode:""})
+    const [shippingInfo, setShippingInfo]=useState({address:"", city:"", state:"", country:"", pinCode:""})
   const navigate=useNavigate();
 
   const changeHandler=(e:ChangeEvent<HTMLInputElement | HTMLSelectElement> )=>{

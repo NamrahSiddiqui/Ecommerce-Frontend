@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProductCard from "../components/product-card";
-
+import macbook from '../assets/macbook.jpg'
 const Search = () => {
   const { search, setSearch } = useState("");
   const [sort, setSort] = useState("");
@@ -11,7 +11,6 @@ const isNextPage=page<4
 const isPrevPage=page>1;
   return (
     <div className="product-search-page">
-      Search
       <aside>
         <h2>Filters</h2>
         <div>
@@ -51,7 +50,7 @@ const isPrevPage=page>1;
           value={search}
         ></input>
         <div className="search-product-list">
-          <ProductCard />
+          <ProductCard productId='asa' name="Macbook" price="999" stock={122}  photo={macbook}/>
         </div>
         <article>
           <button onClick={()=>setPage((prev)=>prev-1)} disabled={!isPrevPage}>Prev</button>
